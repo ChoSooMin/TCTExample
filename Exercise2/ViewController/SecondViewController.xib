@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController" customModule="Exercise2" customModuleProvider="target">
+            <connections>
+                <outlet property="shopListTableView" destination="Vvk-bf-Swn" id="hEo-uy-73t"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Peg-eQ-lTy"/>
+                <outletCollection property="typeRadioButtons" destination="BDF-6J-H3d" collectionClass="NSMutableArray" id="JzS-Lg-MMe"/>
+                <outletCollection property="typeRadioButtons" destination="A0D-tz-slW" collectionClass="NSMutableArray" id="f1q-jp-jtD"/>
+                <outletCollection property="typeRadioButtons" destination="J6p-cx-v5C" collectionClass="NSMutableArray" id="dj5-R1-YUe"/>
+                <outletCollection property="typeRadioButtons" destination="mni-Uq-Qng" collectionClass="NSMutableArray" id="gMq-G6-2JQ"/>
+                <outletCollection property="typeRadioButtons" destination="xah-8h-j3j" collectionClass="NSMutableArray" id="xnB-F5-ezY"/>
+                <outletCollection property="sortRadioButtons" destination="iGJ-RH-CnM" collectionClass="NSMutableArray" id="0lt-5C-cZd"/>
+                <outletCollection property="sortRadioButtons" destination="Zvk-I0-WzG" collectionClass="NSMutableArray" id="0aZ-gH-xlB"/>
+                <outletCollection property="sortRadioButtons" destination="P0I-Me-RgY" collectionClass="NSMutableArray" id="EQB-be-HHK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마곡 요기서 배달" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mn-IL-cLR">
+                    <rect key="frame" x="131.66666666666666" y="83" width="111.66666666666666" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="P7U-VS-OBV">
+                    <rect key="frame" x="10" y="113.33333333333331" width="355" height="68.666666666666686"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ub5-dS-JqH">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="34.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDF-6J-H3d">
+                                    <rect key="frame" x="0.0" y="0.0" width="61.666666666666664" height="34.333333333333336"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="전체"/>
+                                    <connections>
+                                        <action selector="touchTypeButton:" destination="-1" eventType="touchUpInside" id="3Zf-ab-aLv"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0D-tz-slW">
+                                    <rect key="frame" x="71.666666666666671" y="0.0" width="62.000000000000014" height="34.333333333333336"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="치킨"/>
+                                    <connections>
+                                        <action selector="touchTypeButton:" destination="-1" eventType="touchUpInside" id="JnK-fw-WTb"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6p-cx-v5C">
+                                    <rect key="frame" x="143.66666666666666" y="0.0" width="61.666666666666657" height="34.333333333333336"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="피자"/>
+                                    <connections>
+                                        <action selector="touchTypeButton:" destination="-1" eventType="touchUpInside" id="ObP-bz-R9U"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mni-Uq-Qng">
+                                    <rect key="frame" x="215.33333333333334" y="0.0" width="61.666666666666657" height="34.333333333333336"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="분식"/>
+                                    <connections>
+                                        <action selector="touchTypeButton:" destination="-1" eventType="touchUpInside" id="jUa-3L-Cgf"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xah-8h-j3j">
+                                    <rect key="frame" x="287" y="0.0" width="68" height="34.333333333333336"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="카페"/>
+                                    <connections>
+                                        <action selector="touchTypeButton:" destination="-1" eventType="touchUpInside" id="kJ4-GT-CHR"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lDd-md-Eeh">
+                            <rect key="frame" x="0.0" y="34.333333333333329" width="355" height="34.333333333333329"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGJ-RH-CnM">
+                                    <rect key="frame" x="0.0" y="0.0" width="111" height="34.333333333333336"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="기본 정렬순"/>
+                                    <connections>
+                                        <action selector="touchSortButton:" destination="-1" eventType="touchUpInside" id="5Tj-uw-Frj"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvk-I0-WzG">
+                                    <rect key="frame" x="121" y="0.0" width="111" height="34.333333333333336"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="별점 높은순"/>
+                                    <connections>
+                                        <action selector="touchSortButton:" destination="-1" eventType="touchUpInside" id="EDV-gp-czY"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0I-Me-RgY">
+                                    <rect key="frame" x="242" y="0.0" width="113" height="34.333333333333336"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="리뷰 많은순"/>
+                                    <connections>
+                                        <action selector="touchSortButton:" destination="-1" eventType="touchUpInside" id="r2p-s3-qKq"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Vvk-bf-Swn">
+                    <rect key="frame" x="0.0" y="206" width="375" height="461"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Vvk-bf-Swn" secondAttribute="bottom" id="Bmt-HO-ErP"/>
+                <constraint firstItem="5mn-IL-cLR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="24" id="H4H-xc-amb"/>
+                <constraint firstItem="P7U-VS-OBV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Iis-Qz-lJv"/>
+                <constraint firstItem="Vvk-bf-Swn" firstAttribute="top" secondItem="P7U-VS-OBV" secondAttribute="bottom" constant="24" id="KIK-ZN-2LN"/>
+                <constraint firstItem="P7U-VS-OBV" firstAttribute="top" secondItem="5mn-IL-cLR" secondAttribute="bottom" constant="10" id="Od7-W1-ENW"/>
+                <constraint firstItem="Vvk-bf-Swn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QPH-JE-z0Z"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="P7U-VS-OBV" secondAttribute="trailing" constant="10" id="SmO-4n-w38"/>
+                <constraint firstAttribute="trailing" secondItem="Vvk-bf-Swn" secondAttribute="trailing" id="hGm-HD-o4q"/>
+                <constraint firstItem="5mn-IL-cLR" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="lVI-mo-bbi"/>
+            </constraints>
+            <point key="canvasLocation" x="669" y="37"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

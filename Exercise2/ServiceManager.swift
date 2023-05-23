@@ -14,9 +14,12 @@ enum APIEndPoint {
     var path: String {
         switch self {
         case .list:
-            return "/dcx/3/groupMember"
-        case .detail(let keyword):
-            return "/dcx/1/conversation/\(keyword)"
+//            return "/dcx/3/groupMember"
+            return "/dcx/1/shopList"
+//        case .detail(let keyword):
+        case .detail(let id):
+//            return "/dcx/1/conversation/\(keyword)"
+            return "dcx/1/shopDetail/\(id)"
         }
     }
     
