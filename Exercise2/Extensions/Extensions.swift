@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: - UITableView
 
 protocol UITableViewCreatable where Self: UITableViewCell {
     
@@ -23,6 +24,7 @@ extension UITableViewCreatable {
     }
 }
 
+// MARK: - UIView
 
 public protocol UIViewCreatable where Self: UIView {
     
@@ -45,6 +47,7 @@ extension UIViewCreatable {
     }
 }
 
+// MARK: - Int
 
 extension Int {
     
@@ -53,6 +56,8 @@ extension Int {
     }
 }
 
+// MARK: - String
+
 extension String {
     
     public func toInt() -> Int? {
@@ -60,6 +65,7 @@ extension String {
     }
 }
 
+// MARK: - Date
 
 extension Date {
 
@@ -83,6 +89,8 @@ extension Date {
         return start
     }
 }
+
+// MARK: - DateFormatter
 
 extension DateFormatter {
 
