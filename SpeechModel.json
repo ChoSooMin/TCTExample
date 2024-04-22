@@ -1,0 +1,62 @@
+[
+    {
+        "ORIGIN_LANGUAGE": "ko-KR",
+        "ORIGIN_TEXT": "안녕하세요 음성회의 시작하겠습니다.",
+        "OFFSET": 5000,
+        "TRANSLATIONS": [
+            {
+                "LANGUAGE": "en-US",
+                "TEXT": "Hello"
+            },
+            {
+                "LANGUAGE": "vi-VN",
+                "TEXT": "Hello"
+            }
+        ]
+    },
+    {
+        "ORIGIN_LANGUAGE": "ko-KR",
+        "ORIGIN_TEXT": "네, 안녕하세요",
+        "OFFSET": 9000,
+        "TRANSLATIONS": [
+            {
+                "LANGUAGE": "en-US",
+                "TEXT": "Hello"
+            },
+            {
+                "LANGUAGE": "vi-VN",
+                "TEXT": "Hello"
+            }
+        ]
+    },
+    {
+        "ORIGIN_LANGUAGE": "en-US",
+        "ORIGIN_TEXT": "Hello, World",
+        "OFFSET": 10000,
+        "TRANSLATIONS": [
+            {
+                "LANGUAGE": "en-US",
+                "TEXT": "Hello"
+            },
+            {
+                "LANGUAGE": "vi-VN",
+                "TEXT": "Hello"
+            }
+        ]
+    },
+    {
+        "ORIGIN_LANGUAGE": "vi-VN",
+        "ORIGIN_TEXT": "네, 안녕하세요",
+        "OFFSET": 15000,
+        "TRANSLATIONS": [
+            {
+                "LANGUAGE": "en-US",
+                "TEXT": "Hello"
+            },
+            {
+                "LANGUAGE": "vi-VN",
+                "TEXT": "Hello"
+            }
+        ]
+    }
+]
